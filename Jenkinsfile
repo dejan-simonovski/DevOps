@@ -8,6 +8,6 @@ node {
     }
     stage('Push image') {   
                // signal the orchestrator that there is a new version
-        }
+        
     }
 }
