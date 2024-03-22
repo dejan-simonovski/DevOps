@@ -4,7 +4,7 @@ node {
         checkout scm
     }
     stage('Build image') {
-       app = docker.build("dejans12/devopsjenkins")
+       app = docker.build("dejans12/devops")
     }
     stage('Push image') {   
         docker.withRegistry('https://registry.hub.docker.com', 'dejan-dockerhub') {
